@@ -65,6 +65,10 @@ function App() {
     setUnlocked(true);
   };
 
+  useEffect(() => {
+    document.title = 'le portal';
+  }, []);
+
   const handleRead = () => {
     setVideoPlaying(true);
     const video = videoRef.current;
